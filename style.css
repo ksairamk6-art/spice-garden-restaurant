@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #211710;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar h2 {
+    color: #ffb347;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hero section */
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e88b27;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About section */
+.about {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Menu section */
+.menu {
+    background: #fff8ef;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food-card h3 {
+    margin-top: 10px;
+}
+
+.food-card p {
+    color: #e0781c;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Contact section */
+.contact {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.contact button {
+    background: #e88b27;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #211710;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+}
+.food-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.food-card img {
+    transition: transform 0.3s;
+}
+
+.food-card:hover img {
+    transform: scale(1.03);
+}
+#orderForm {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#orderForm input,
+#orderForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#orderForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#orderForm button {
+    border: none;
+    cursor: pointer;
+}

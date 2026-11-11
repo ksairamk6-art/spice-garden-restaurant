@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Garden Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2>Spice Garden</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Delicious Food, Happy Moments</h1>
+            <p>Experience the authentic taste of Indian cuisine.</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Welcome to Spice Garden</h2>
+        <p>We serve delicious food made with fresh ingredients
+        and traditional flavours.</p>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Popular Dishes</h2>
+
+        <div class="food-container">
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600"
+                     alt="Indian chicken biryani">
+                <h3>Chicken Biryani</h3>
+                <p>₹220</p>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600"
+                     alt="Paneer curry">
+                <h3>Paneer Curry</h3>
+                <p>₹180</p>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600"
+                     alt="Indian samosas">
+                <h3>Samosa</h3>
+                <p>₹40</p>
+            </div> 
+
+        </div >
+               
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Visit Us</h2>
+        <p>Location: Vijayawada, Andhra Pradesh</p>
+        <p>Phone: +91 8247709353 (Demo number)</p>
+        <button onclick="showMessage()">Contact Us</button>
+        <a
+  href="https://wa.me/919876543210?text=Hello%20Spice%20Garden"
+  target="_blank"
+  class="btn">
+  Order on WhatsApp
+</a>
+<h2>Contact & Order</h2>
+
+<form id="orderForm">
+    <input
+        type="text"
+        id="customerName"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="tel"
+        id="customerPhone"
+        placeholder="Your Phone Number"
+        required
+    >
+
+    <textarea
+        id="orderMessage"
+        placeholder="What would you like to order?"
+        required
+    ></textarea>
+
+    <button type="submit" class="btn">
+        Send Order on WhatsApp
+    </button>
+</form>
+    </section>
+
+    <footer>
+        <p>© 2026 Spice Garden Restaurant. Demo website.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
